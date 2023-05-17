@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+1. Vị trí
+2. Kích thước (wid and high)
+3. Màu sắc
+4. Kiểu dáng ( hình tròn, hình vuông, kiểu chữ ...)
+*/
+
+/*
+1. Làm từ ngoài vào trong
+2. Từ trên xuống dưới 
+3. Từ tổng quản đến chi tiết 
+*/
+/*import url*/
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600");
+/*Common*/
+.clear{
+    clear: both;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-content:flex-start;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.image{
+    width: 50%;
+    
+}
+.welcome{
+    font-family: 'Inter';
+    font-size: 30px;
+    line-height: 38px;
+    color: black;
+    height: 36px;
+    margin-bottom: 8px;
+    width: 360px;
+}
+.introduce{
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+    color: #475467;
+}
+.login{
+    background-color: white;
+    width: 50%;
+    display: flex;  
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+   
+}
+.login-section{
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.login-content{
+    margin-bottom: 25px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 160px;
+    gap: 8px;
+    padding: 0;
+}
+.modal-input{
+    width: 360px;
+    height: 44px;
+    padding: 10px 14px;
+    /* Base/White */
+    background: #FFFFFF;
+    /* Gray/300 */
+    border: 1px solid #D0D5DD;
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05); 
+    border-radius: 8px;
+}
+.modal-label{
+    width: 36px;
+    height: 20px;
+    /* Text sm/Medium */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px
+}
+.check{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    float: left;
+    width: 100%;  
+    justify-content: space-between; 
+}
+.label{
+    padding-left: 8px;
+}
+.check > a{
+    display: flex;
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #4C2111;
+    font-weight: 600;
+}
+.login-button{
+    text-align: center;
+}
+#setup-button{
+    width: 100%;
+    height: 44px;
+    border: 1px solid #4C2111;
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    color: white;
+    background-color: #4C2111;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+#setup-button:hover{
+    opacity: 0.8;
+}
+.social-icon{
+    width: 24px;
+}
+.sign-type:hover{
+    opacity: 0.5;
+}
+.sign-type{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    margin-top: 16px ;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.sign-type-1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    margin-top: 16px ;
+    border: 1px solid #e1dcdc;
+    border-radius: 8px;
+    background-color: #1877F2;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.sign-type-2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    margin-top: 16px ;
+    border: 1px solid #e1dcdc;
+    border-radius: 8px;
+    background-color: black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.sign-type-2 .apple-style {
+    color: white;
+}
+.sign-type-1 .face-style{
+    color: white;
+}
+.google-content > a{
+    text-decoration: none;
+    color: black;
+}
+.google-content{
+    padding-left: 12px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    min-width: 160px;
+}
+
+.signup{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    width: 100%;
+    height: 20px;
+    color: #475467;
+    /* Text sm/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    order: 0;
+}
+.signup-add{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #4C2111;
+    font-weight: 600;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.login-button a:hover{
+    opacity: 0.5;
+}
+/*login box*/
+.login-special a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #4C2111;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    width: 100%;
+    height: 44px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+}
+.login-special a span {
+    position: absolute;
+    display: block;
+  }
+  
+.login-box a:hover {
+    background: #4C2111;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4C2111,
+                0 0 25px #4C2111,
+                0 0 50px #4C2111,
+                0 0 100px #4C2111;
+}
+.content__login__box{
+    display: flex;
+    justify-content: center;
+}   
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #4C2111);
+    animation: btn-anim1 1s linear infinite;
+}
+  
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+}
+  
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #4C2111);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+  
+@keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+}
+  
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #4C2111);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+  
+@keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+}
+  
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #4C2111);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+  
+@keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+}
